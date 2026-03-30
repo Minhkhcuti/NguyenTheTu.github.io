@@ -22,20 +22,20 @@ for (let i = 0; i < nameParts.length - 1; i++) {
 let email = lastName + firstLetters + "." + studentId.toLowerCase() + "@hvnh.edu.vn";
 let coursePeriod = studentId.substring(0, 2);
 
-let faculty = "";
+let faculty = studentId.substring(3,6);
 
-switch (facultyCode) {
-    case "A":
+switch (faculty) {
+    case "404":
         faculty = "CNTT & KTS";
         break;
-    case "B":
-        faculty = "Kinh tế";
+    case "401":
+        faculty = "KHDL";
         break;
-    case "C":
+    case "401":
         faculty = "Ngân hàng";
         break;
-    case "D":
-        faculty = "Tài chính";
+    case "407":
+        faculty = "Kinh tế";
         break;
     default:
         faculty = "Không xác định";
